@@ -1,0 +1,32 @@
+apiVersion: portal.gloo.solo.io/v1beta1
+kind: APIProduct
+metadata:
+  labels:
+    app: flask-api
+  name: flask-product
+  namespace: gloo-portal
+spec:
+  displayInfo:
+    title: Flask Prod
+  versions:
+  - apis:
+    - apiDoc:
+  labels:
+    app: flask-api
+  name: flask-product
+  namespace: gloo-portal
+spec:
+  displayInfo:
+    title: Flask Prod
+  versions:
+  - apis:
+    - apiDoc:
+        name: flask
+        namespace: gloo-portal
+      openApi: {}
+    gatewayConfig:
+      route:
+        routeRef:
+          name: flask-route
+          namespace: gloo-portal
+    name: v1

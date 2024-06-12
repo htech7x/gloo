@@ -1,0 +1,12 @@
+apiVersion: portal.gloo.solo.io/v1beta1
+kind: APIDoc
+metadata:
+  name: flask
+  namespace: gloo-portal
+spec:
+  openApi:
+    content:
+      configMap:
+        key: api-doc-spec
+        name: gloo-portal-flask-api-doc-spec
+        namespace: gloo-portal

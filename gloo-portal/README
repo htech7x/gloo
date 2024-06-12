@@ -1,0 +1,9 @@
+1. Add gateway-proxy IP to /etc/hosts:
+
+    <gateway-proxy IP> portal.example.com api.example.com
+
+2. Open in browser "portal.example.com"
+
+3. Creds:
+    user: dev 
+    passwd: 12345678$

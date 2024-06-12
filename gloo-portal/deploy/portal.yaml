@@ -1,0 +1,19 @@
+apiVersion: portal.gloo.solo.io/v1beta1
+kind: Portal
+metadata:
+  name: flask-portal
+  namespace: gloo-portal
+spec:
+  allApisPublicViewable: true
+  customStyling:
+    backgroundColor: '#F9F9F9'
+    defaultTextColor: '#35393B'
+    primaryColor: '#2196C9'
+    secondaryColor: '#253E58'
+  displayName: Flask Portal
+  domains:
+  - portal.example.com
+  enableIngress: true
+  publishedEnvironments:
+  - name: flask-env
+    namespace: gloo-portal

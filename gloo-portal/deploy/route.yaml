@@ -1,0 +1,11 @@
+apiVersion: portal.gloo.solo.io/v1beta1
+kind: Route
+metadata:
+  name: flask-route
+  namespace: gloo-portal
+spec:
+  backends:
+  - kube:
+      name: api-download
+      namespace: default
+      port: 5000
